@@ -1,0 +1,95 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "neilson/accordion-block",
+  "version": "0.1.0",
+  "title": "Neilson Accordion Block",
+  "category": "text",
+  "description": "Create highly customizable collapsible content.",
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "attributes": {
+    "borderWidth": {
+      "type": "number",
+      "default": 1
+    },
+    "borderColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "paddings": {
+      "type": "object",
+      "default": {
+        "top": "10px",
+        "bottom": "10px",
+        "left": "15px",
+        "right": "15px"
+      }
+    },
+    "margins": {
+      "type": "object",
+      "default": {
+        "top": "0px",
+        "bottom": "15px"
+      }
+    },
+    "borderRadius": {
+      "type": "number",
+      "default": 0
+    },
+    "heading": {
+      "type": "string",
+      "default": "Accordion Heading"
+    },
+    "headingTag": {
+      "type": "string",
+      "default": "h3"
+    },
+    "headingColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "headingBackground": {
+      "type": "string",
+      "default": "#FFFFFF"
+    },
+    "bodyBackground": {
+      "type": "string",
+      "default": "#FFFFFF"
+    },
+    "bodyColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "id": {
+      "type": "string"
+    },
+    "startsOpen": {
+      "type": "boolean",
+      "default": false
+    },
+    "useCustomSpacings": {
+      "type": "boolean",
+      "default": false
+    },
+    "useCustomBorders": {
+      "type": "boolean",
+      "default": false
+    },
+    "useCustomHeaderColors": {
+      "type": "boolean",
+      "default": false
+    },
+    "useCustomBodyColors": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "textdomain": "neilson-accordion-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

@@ -1,0 +1,49 @@
+/**
+ * The following styles get applied both on the front of the site
+ * and in the editor.
+ */
+
+.nab-accordion {
+	overflow: hidden;
+
+	&.open {
+		.nab-accordion__body {
+			display: block;
+		}
+		.nab-accordion__header-icon {
+			transform: rotate(180deg);
+		}
+	}
+}
+
+.nab-section__title {
+	font-weight: bold;
+	margin: 0.5rem 0 1rem;
+}
+
+.nab-section__label {
+	margin-bottom: 0.5rem;
+}
+
+.nab-accordion__header {
+	align-items: center;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+
+	.nab-accordion__header-title {
+		margin: 0;
+	}
+
+	.nab-accordion__header-icon-wrapper {
+		display: flex;
+	}
+}
+
+.nab-accordion__body {
+	display: none;
+}
+
+.nab-accordion__header-icon {
+	transition: all 0.6s ease;
+}
